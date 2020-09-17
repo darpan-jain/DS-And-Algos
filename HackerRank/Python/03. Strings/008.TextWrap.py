@@ -1,0 +1,11 @@
+'''
+Question : You are given a string S and width w.
+           Your task is to wrap the string into a paragraph of width w.
+
+Link : https://www.hackerrank.com/challenges/text-wrap/problem
+'''
+
+def wrap(string, max_width):
+    
+    s = "\n".join([string[i : i + max_width] for i in  range(0 , len(string) , max_width)])
+    return s  
